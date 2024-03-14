@@ -20,3 +20,5 @@ create table Tarefas(
 
 describe Usuarios;
 describe Tarefas;
+show tables;
+
