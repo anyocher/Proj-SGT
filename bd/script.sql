@@ -13,8 +13,10 @@ create table Usuarios(
 create table Tarefas(
     idTarefas int not null primary key auto_increment,
     descricao varchar(100) not null default("Tarefas"),
-    DataVencimento varchar(30) not null,
+    DataVencimento date not null,
     status varchar(20) not null default
+    usuario_id int,
+    foreign key(usuario_id) references Usuarios(idUsuarios)
 );
 
 
